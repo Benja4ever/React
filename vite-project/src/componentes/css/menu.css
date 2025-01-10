@@ -1,9 +1,29 @@
+#menu{
+    max-width: 1800px;
+    justify-content: center;
+}
+
+.nav-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1.5rem;
+}
+div.cincuenta h3{
+    font-size:medium;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
 ul.menu li {
     display: inline;
+    margin: 0 1rem;
     
 }
 .menu a{
     color: red;
-    gap: 2rem;
+    font-size: 1.2rem;
     
 }
