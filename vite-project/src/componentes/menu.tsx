@@ -1,5 +1,5 @@
 import './css/menu.css';
-function Menu(){
+const Menu = () =>{
     
     return(
         <ul className= "menu">

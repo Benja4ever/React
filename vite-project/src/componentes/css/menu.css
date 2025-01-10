@@ -1,4 +1,9 @@
+ul.menu li {
+    display: inline;
+    
+}
 .menu a{
     color: red;
-
+    gap: 2rem;
+    
 }
