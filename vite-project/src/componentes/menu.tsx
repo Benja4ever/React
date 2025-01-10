@@ -5,7 +5,7 @@ const Menu = () =>{
         <article>
             <div id='menu'>
                 <div className='nav-grid'>
-                    <div>
+                    <div className='cincuenta'>
                         <h3>Practicando-Web</h3>
                     </div>
                     <div>
