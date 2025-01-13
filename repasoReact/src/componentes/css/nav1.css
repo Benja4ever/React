@@ -1,0 +1,37 @@
+#menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nav-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20rem;
+    max-width: 1200px;
+}
+.cincuenta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.cincuenta h3{
+    font-size:2rem;
+}
+ul.menu{
+    list-style: none;
+    display: flex;
+    place-items: center;
+    margin: 1rem 0;
+}
+ul.menu li {
+    display: inline;
+    margin: 1rem;
+    
+}
+.menu a{
+    color: red;
+    font-size: 1.2rem;
+    
+}
