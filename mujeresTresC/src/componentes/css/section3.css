@@ -12,6 +12,8 @@
     align-items: center;
     background-color: #f9f9f9; /* Fondo claro */
     padding: 40px 0;
+    margin-bottom: 40px; /* Espacio abajo */
+    margin-top: 40px;    /* Espacio arriba */
   }
   
   .section3-article {

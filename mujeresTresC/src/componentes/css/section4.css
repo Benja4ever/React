@@ -1,0 +1,67 @@
+/* section4.css */
+
+/* Reseteo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .section4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    margin-bottom: 40px; /* Espacio abajo */
+    margin-top: 40px;    /* Espacio arriba */
+  }
+  
+  .section4-article {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section4-grid {
+    display: grid;
+    grid-template-columns: 40% 60%; /* Dividir en dos columnas (40% izquierda y 60% derecha) */
+    gap: 30px; /* Espaciado entre los dos divs */
+  }
+  
+  .section4-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .section4-text h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .section4-text p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .section4-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section4-video video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Esquinas redondeadas, si lo prefieres */
+  }
+  

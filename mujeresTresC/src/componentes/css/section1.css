@@ -12,6 +12,8 @@
     align-items: center;
     background-color: #f4f4f4; /* Fondo claro para distinguir la sección */
     padding: 20px 0;
+    margin-bottom: 40px; /* Espacio abajo */
+   margin-top: 40px;    /* Espacio arriba */
   }
   
   .section1-article {
