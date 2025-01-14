@@ -14,10 +14,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff; /* Fondo blanco */
-    padding: 20px 0;
-    margin-bottom: 40px; /* Espacio abajo */
-    margin-top: 40px;    /* Espacio arriba */
+    background-color: #EAC25F; /* Fondo blanco */
+    padding: 100px 0;
+
   }
   
   .section2-article {

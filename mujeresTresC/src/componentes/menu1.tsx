@@ -4,13 +4,14 @@ const Menu1 = () =>{
     
     <nav className="navbar">
         <div className="navbar-logo">
-            <h2>Nombre de la Página</h2>
+            <h2>AM3C</h2>
         </div>
         <ul className="navbar-menu">
             <li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Proyectos</a></li>
+            <li><a href="#">Somos</a></li>
+            <li><a href="#">Noticias</a></li>
+            <li><a href="#">Actividades</a></li>
+            <li><a href="#">Calendario</a></li>
             <li><a href="#">Contacto</a></li>
         </ul>
         <div className="navbar-icon">

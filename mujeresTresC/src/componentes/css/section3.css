@@ -11,10 +11,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #EAC25F; /* Fondo claro */
-    padding: 40px 0;
-    margin-bottom: 40px; /* Espacio abajo */
-    margin-top: 40px;    /* Espacio arriba */
+    background-color: #f4f4f4; /* Fondo claro */
+    padding: 100px 0;
+
   }
   
   .section3-article {

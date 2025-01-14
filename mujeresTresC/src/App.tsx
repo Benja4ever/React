@@ -5,6 +5,7 @@ import Section1 from './componentes/section1'
 import Section2 from './componentes/section2'
 import Section3 from './componentes/section3'
 import Section4 from './componentes/section4'
+import Section5 from './componentes/seccion5'
 
 
 
@@ -19,6 +20,7 @@ function App() {
       <Section2></Section2>
       <Section3></Section3>
       <Section4></Section4>
+      <Section5></Section5>
       
     </>
   )

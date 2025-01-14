@@ -10,10 +10,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #EAC25F; /* Fondo claro para distinguir la sección */
+    background-color: #f4f4f4; /* Fondo claro para distinguir la sección */
     padding: 100px 0;
-    margin-bottom: 40px; /* Espacio abajo */
-   margin-top: 40px;    /* Espacio arriba */
+
   }
   
   .section1-article {

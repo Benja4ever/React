@@ -6,9 +6,13 @@ const Section4 = () =>{
             <article className="section4-article">
                 <div className="section4-grid">
                     <div className="section4-text">
-                        <h3>Título de la sección 4</h3>
-                        <p>Este es el texto descriptivo de la cuarta sección. Aquí puedes agregar detalles sobre el contenido del video, su propósito o cualquier otra información relevante.
+                        <h3>Noticias</h3>
+                        <p>Aquí una breve dscripción sobre las noticias o a¡ctividades que se pueden mostrar mediante un video interactivo.
                         </p>
+                        <p><span><a href="">Saber más</a></span></p>
+                        <button className="btn-5">
+                            <span>Hazte socia</span>
+                        </button>
                     </div>
       
                     <div className="section4-video">
