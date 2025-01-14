@@ -10,14 +10,17 @@ const Section1 = () =>{
                     </div>
       
                     <div className="section1-text">
-                        <h3>Título de la sección</h3>
-                        <p>Este es el texto descriptivo de la sección. Aquí puedes agregar más detalles sobre el contenido de esta parte de la página.
-                        </p>
+                        <h3 className='title1'>Asociación</h3>
+                        <h3 className='title2'>Mujeres de Tres Cantos</h3>
+                        <p>Aquí debe ir una breve descripción sobre la asociación, quienes son y que fomentan.</p>
+                        <p><span><a href="">Saber más</a></span></p>
+                        <button className="btn-5">
+                            <span>Hazte socia</span>
+                        </button>
                     </div>
                 </div>
             </article>
         </section>
-
     )
 }
 export default Section1;

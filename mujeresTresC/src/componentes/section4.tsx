@@ -13,7 +13,7 @@ const Section4 = () =>{
       
                     <div className="section4-video">
                         <video width="100%" controls>
-                        <source src="ruta-del-video.mp4" type="video/mp4" />
+                        <source src='https://www.youtube.com/watch?v=9GghHbQekWk' type="video/mp4" />
                         Tu navegador no soporta el elemento de video.
                         </video>
                     </div>

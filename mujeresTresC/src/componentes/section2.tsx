@@ -5,11 +5,10 @@ const Section2 = () =>{
         <section className="section2">
             <article className="section2-article">
                 <div className="section2-title">
-                    <h3>Título de la sección</h3>
+                    <h3>¿Que encontrarás al estar con nosotras?</h3>
                 </div>
                 <div className="section2-text">
-                    <p>Este es el texto descriptivo de esta sección. Aquí puedes detallar información, 
-                    agregar explicaciones o cualquier contenido relevante para el usuario.
+                    <p>Aquí una breve expñlicación que los diferentes beneficios sociales y personales que generaría el ser parte de la asociación, enfocándonos en tres puntos clave.
                     </p>
                 </div>
             </article>
