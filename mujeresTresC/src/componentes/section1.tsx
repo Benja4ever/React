@@ -6,7 +6,7 @@ const Section1 = () =>{
                 <div className="section1-content">
       
                     <div className="section1-image">
-                        <img src='https://www.petdarling.com/wp-content/uploads/2021/01/cachorro-aullando.jpg' alt="Descripción de la imagen" />
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXaMh4oeiHSSs2NUqxGKuKo2hyDDI6ZCcfMQ&s' alt="Descripción de la imagen" />
                     </div>
       
                     <div className="section1-text">
