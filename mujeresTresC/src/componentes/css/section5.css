@@ -156,38 +156,20 @@
 }
 
 /* Contenedor de los botones */
-.button-container {
-    display: flex;
-    justify-content: center; /* Centra los botones horizontalmente */
-    gap: 20px; /* Espacio entre los botones */
-    margin-top: 40px; /* Espacio entre los botones y las imágenes */
-}
-
-/* Contenedor individual para cada botón */
-.button-wrapper {
-    display: flex;
+.section5-button {
+    max-width: 50%;
     justify-content: center;
-    align-items: center;
+    display: grid;             /* Usamos grid para organizar los elementos */
+    grid-template-columns: repeat(2, auto); /* Definimos 2 columnas para los botones */
+    justify-items: center;     /* Centra los botones dentro de sus celdas */
+    gap: 5px;                 /* Espacio entre los botones */
+    margin-top: 40px;          /* Separación entre las imágenes y los botones */
 }
 
-/* Estilo para los botones */
-.btn-5 {
-    background-color: #007bff; /* Color de fondo */
-    color: white; /* Color del texto */
-    padding: 12px 25px; /* Espaciado interno para el botón */
-    border: none;
-    border-radius: 5px; /* Bordes redondeados */
-    font-size: 16px; /* Tamaño de la fuente */
-    cursor: pointer; /* Cursor de mano cuando se pasa por encima */
-    transition: background-color 0.3s ease; /* Transición de color de fondo */
+/* Contenedor de cada botón */
+.button-wrapper {
+    display: flex;             /* Usamos flex dentro de cada contenedor de botón para centrar el contenido */
+    justify-content: center;   /* Centra el contenido dentro del wrapper */
+    align-items: center;       /* Centra verticalmente el botón */
 }
 
-.btn-5:hover {
-    background-color: #0056b3; /* Color de fondo al pasar el ratón */
-}
-
-/* Añadir un poco de estilo a los <span> dentro de los botones */
-.btn-5 span {
-    font-weight: bold;
-    text-transform: uppercase;
-}

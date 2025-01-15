@@ -65,15 +65,15 @@ const Section5 = () =>{
                 <div className="section5-button">
                     <div className="button-wrapper">
                         <button className="btn-5">
-                            <span>Ver más</span>
+                            <span>Inscríbete</span>
                         </button>
                     </div>
-                    <div className="section5-button">
+                    <div className="button-wrapper">
                         <button className="btn-5">
                             <span>Hazte socia</span>
                         </button>
                     </div>
-            </div>
+                </div>
             </article>
         </section>
     );
