@@ -1,0 +1,148 @@
+/* Sección 5 */
+.seccion5 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Ocupa el 100% del ancho */
+    background-color: #f1f1f1; /* Fondo gris claro */
+    padding: 100px 0;
+    
+}
+
+.section5-article {
+    width: 75%; /* El artículo ocupa el 70% del ancho */
+    margin: 0 auto; /* Centra el artículo */
+    
+}
+
+/* Contenedor de las imágenes */
+.container{
+    /* Contenedor principal que agrupa las listas (imágenes) */
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centra los elementos dentro del contenedor */
+    height: 200px; /* Altura fija para el contenedor */
+    gap: 16px; /* Espacio entre los elementos (imágenes) */
+    transition: 0.3s; /* Transición suave cuando se cambia el tamaño o el espaciado */
+}
+
+.container li{
+    /* Cada elemento de la lista (cada imagen) */
+    position: relative;
+    overflow: hidden; /* Oculta lo que excede el borde del li */
+    flex: 0 0 80px; /* Los elementos de la lista son pequeños por defecto */
+    border-radius: 50px; /* Bordes redondeados para el efecto circular */
+    cursor: pointer; /* El cursor se vuelve una mano al pasar sobre la imagen */
+    border-radius: 10px; /* Bordes redondeados adicionales */
+    border: 1px solid; /* Borde alrededor de cada imagen */
+}
+
+.container li img{
+    /* Imagen dentro del elemento de la lista */
+    position: absolute;
+    top: 50%; /* Centra la imagen verticalmente */
+    left: 50%; /* Centra la imagen horizontalmente */
+    translate: -50% -50%; /* Ajusta la posición para que quede exactamente centrada */
+    width: 100%; /* La imagen ocupa el 100% del ancho de su contenedor */
+    height: 100%; /* La imagen ocupa el 100% de la altura del contenedor */
+    object-fit: cover; /* Ajusta la imagen para cubrir todo el área sin deformarse */
+}
+
+.container li,
+.container li img{
+    /* Se asegura de que tanto el elemento de la lista como la imagen tengan transiciones suaves */
+    transition: 0.3s;
+}
+
+.container li .content{
+    /* Contenedor de texto que aparece sobre la imagen */
+    transition: 1.5s ease; /* Transición para mostrar el contenido con un tiempo más largo */
+}
+
+.container span{
+    /* El texto dentro del contenedor "content" */
+    text-align: center;
+    width: 75%; /* El texto ocupa el 75% del contenedor */
+}
+
+.container h2{
+    /* Estilo para los títulos (h2) */
+    font-weight: 100; /* Peso de la fuente más ligero */
+    font-size: 20px; /* Tamaño de la fuente del título */
+    line-height: 4px; /* Espaciado entre líneas para que las letras no se superpongan */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    white-space: nowrap; /* Evita que el texto se ajuste a varias líneas */
+    color: #fff; /* El color del título es blanco */
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+}
+.container h2 a:hover {
+    color: #fff; /* Mantén el color blanco al pasar el ratón sobre el enlace */
+    text-decoration: none; /* Elimina el subrayado cuando se hace hover */
+}
+
+
+.container p{
+    /* Estilo para el texto (p) */
+    color: #ddd; /* Color gris claro para el texto */
+    font-size: 10px; /* Tamaño pequeño para el texto */
+    width: 100%; /* El texto ocupa todo el ancho disponible */
+    margin-bottom: 8px;
+}
+
+.container li .content{
+    /* Estilo para el contenedor de contenido (título + texto) */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1; /* Asegura que el contenido esté encima de la imagen */
+    color: #fff; /* El texto será blanco para contraste */
+    padding: 15px; /* Espaciado interno alrededor del texto */
+    background: 
+    linear-gradient(
+        0deg, rgb(0 0 0 / 70%) 10%, /* Degradado de color oscuro en la parte superior */
+        rgb(255 255 255 / 0%) 100% /* El fondo se desvanece hasta ser transparente */
+    );
+    opacity: 0; /* El contenido es inicialmente invisible */
+    visibility: hidden; /* El contenido está oculto por defecto */
+}
+
+.container:hover{
+    /* Al pasar el mouse sobre el contenedor, se reduce el espacio entre las imágenes */
+    gap: 0;
+}
+
+.container li .content span{
+    /* Estilo para el texto dentro del contenedor cuando se activa el hover */
+    position: absolute;
+    z-index: 3; /* Se asegura de que el texto se muestre encima de la imagen */
+    left: 50%;
+    bottom: 0px; /* Coloca el texto en la parte inferior del contenedor */
+    translate: -50%; /* Centra el texto horizontalmente */
+    scale: 0.85; /* Hace que el texto sea un poco más pequeño inicialmente */
+    visibility: hidden; /* El texto está oculto por defecto */
+    opacity: 0; /* El texto es invisible por defecto */
+}
+
+.container li:hover{
+    /* Cuando se pasa el mouse sobre el li, se expande */
+    flex: 0 1 260px; /* El tamaño del elemento de la lista aumenta */
+    scale: 1.1; /* Aumenta un poco el tamaño del elemento */
+    z-index: 10; /* Hace que el elemento de la lista esté encima de los demás */
+    opacity: 1; /* Se asegura de que el elemento sea visible */
+}
+
+.container li:hover .content{
+    /* Al pasar el mouse sobre el li, el contenido (título y texto) se vuelve visible */
+    opacity: 1;
+    visibility: visible;
+}
+
+.container li:hover span{
+    /* Al pasar el mouse sobre el li, el texto (span) se muestra */
+    scale: 1; /* El texto vuelve a su tamaño normal */
+    opacity: 1; /* El texto se hace visible */
+    visibility: visible; /* El texto se hace visible */
+}

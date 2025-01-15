@@ -7,10 +7,6 @@
     box-sizing: border-box;
   }
   
-  body {
-    font-family: Arial, sans-serif;
-  }
-  
   .section4 {
     width: 100%;
     display: flex;
