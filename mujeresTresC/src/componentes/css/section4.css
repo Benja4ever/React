@@ -1,65 +1,102 @@
 /* section4.css */
-
 /* Reseteo general */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .section4 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #EAC25F;
-    padding: 100px 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  }
-  
-  .section4-article {
-    width: 75%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+/* Contenedor principal */
+.section4 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EAC25F;
+  padding: 100px 0;
+}
+
+/* Artículo de la sección */
+.section4-article {
+  width: 90%; /* Ancho flexible */
+  max-width: 1200px; /* Límite máximo para pantallas grandes */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Grid para las columnas */
+.section4-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Columna única por defecto */
+  gap: 30px; /* Espaciado entre los elementos */
+}
+
+/* Texto de la sección */
+.section4-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Títulos */
+.section4-text h3 {
+  font-size: 1.5rem; /* Usamos rem para que el tamaño sea flexible */
+  margin-bottom: 10px;
+  color: brown;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Párrafos */
+.section4-text p {
+  font-size: 1rem; /* Más flexible */
+  color: #696450;
+  line-height: 1.6;
+}
+
+/* Video de la sección */
+.section4-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section4-video video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
   .section4-grid {
-    display: grid;
-    grid-template-columns: 40% 60%; /* Dividir en dos columnas (40% izquierda y 60% derecha) */
-    gap: 30px; /* Espaciado entre los dos divs */
+      grid-template-columns: 1fr; /* Una sola columna */
   }
-  
-  .section4-text {
-    flex: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  
+
   .section4-text h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color:brown;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 1.2rem; /* Ajustamos el tamaño del título */
   }
-  
+
   .section4-text p {
-    font-size: 18px;
-    color: #696450;;
-    line-height: 1.6;
+      font-size: 0.9rem; /* Ajustamos el tamaño del párrafo */
   }
-  
-  .section4-video {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+  .section4-article {
+      width: 95%; /* Ajustamos el ancho del artículo */
   }
-  
-  .section4-video video {
-    width: 100%;
-    height: auto;
-    border-radius: 8px; /* Esquinas redondeadas, si lo prefieres */
+
+  .btn-5 {
+      width: 100%; /* Hacemos el botón más grande en pantallas pequeñas */
   }
-  
+}
+
+@media (max-width: 480px) {
+  .section4-text h3 {
+      font-size: 1rem; /* Aún más pequeño en pantallas muy pequeñas */
+  }
+
+  .section4-text p {
+      font-size: 0.8rem;
+  }
+}

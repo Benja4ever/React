@@ -15,6 +15,14 @@
     margin: 0 auto; /* Centra el artículo */
     
 }
+.section5-article h3{
+    text-align: center;
+    margin-bottom: 30px;
+    color:brown;
+    font-size: 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
 
 /* Contenedor de las imágenes */
 .container{
@@ -22,8 +30,8 @@
     width: 100%;
     display: flex;
     justify-content: center; /* Centra los elementos dentro del contenedor */
-    height: 200px; /* Altura fija para el contenedor */
-    gap: 16px; /* Espacio entre los elementos (imágenes) */
+    height: 400px; /* Altura fija para el contenedor */
+    gap: 25px; /* Espacio entre los elementos (imágenes) */
     transition: 0.3s; /* Transición suave cuando se cambia el tamaño o el espaciado */
 }
 
@@ -71,7 +79,7 @@
     font-weight: 100; /* Peso de la fuente más ligero */
     font-size: 20px; /* Tamaño de la fuente del título */
     line-height: 4px; /* Espaciado entre líneas para que las letras no se superpongan */
-    margin-bottom: 20px; /* Espacio debajo del título */
+    margin-bottom: 40px; /* Espacio debajo del título */
     white-space: nowrap; /* Evita que el texto se ajuste a varias líneas */
     color: #fff; /* El color del título es blanco */
     text-decoration: none; /* Elimina el subrayado predeterminado */
@@ -85,9 +93,9 @@
 .container p{
     /* Estilo para el texto (p) */
     color: #ddd; /* Color gris claro para el texto */
-    font-size: 10px; /* Tamaño pequeño para el texto */
+    font-size: 15px; /* Tamaño pequeño para el texto */
     width: 100%; /* El texto ocupa todo el ancho disponible */
-    margin-bottom: 8px;
+    margin-bottom: 20px;
 }
 
 .container li .content{
@@ -145,4 +153,41 @@
     scale: 1; /* El texto vuelve a su tamaño normal */
     opacity: 1; /* El texto se hace visible */
     visibility: visible; /* El texto se hace visible */
+}
+
+/* Contenedor de los botones */
+.button-container {
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 20px; /* Espacio entre los botones */
+    margin-top: 40px; /* Espacio entre los botones y las imágenes */
+}
+
+/* Contenedor individual para cada botón */
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para los botones */
+.btn-5 {
+    background-color: #007bff; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 12px 25px; /* Espaciado interno para el botón */
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cursor de mano cuando se pasa por encima */
+    transition: background-color 0.3s ease; /* Transición de color de fondo */
+}
+
+.btn-5:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el ratón */
+}
+
+/* Añadir un poco de estilo a los <span> dentro de los botones */
+.btn-5 span {
+    font-weight: bold;
+    text-transform: uppercase;
 }
