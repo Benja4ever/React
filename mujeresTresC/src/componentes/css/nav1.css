@@ -7,6 +7,7 @@
 
 body {
   font-family: Arial, sans-serif;
+  margin-top: 50px; /* Espacio para que el contenido no quede tapado por el menú */
 }
 
 .navbar {
@@ -14,13 +15,26 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #f8f9fa;
+  background-color: rgba(218, 127, 67, 0.8); /* Color con transparencia */
   border-bottom: 1px solid #ddd;
+  position: fixed; /* Fijamos la posición */
+  top: 0; /* Se mantiene en la parte superior */
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
 }
+
+.navbar.scrolled {
+  background-color: rgba(218, 127, 67, 0.9); /* Color con más opacidad cuando se hace scroll */
+}
+
+/* Espaciado extra en el body para que el contenido no quede debajo del menú */
+
 
 .navbar-logo h2 {
   font-size: 24px;
-  color: #333;
+  color: #ffffff;
 }
 
 .navbar-menu {
@@ -36,7 +50,7 @@ body {
 
 .navbar-item a {
   text-decoration: none;
-  color: #555;
+  color: #ffffff;
   font-size: 16px;
   padding: 10px 15px;
   transition: background-color 0.3s ease, color 0.3s ease;

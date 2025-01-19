@@ -1,0 +1,110 @@
+/*footer1.css*/
+/* Estilos generales */
+.footer1 {
+    width: 100%;
+    padding: 50px 0;
+    background-color: brown; /* Cambia según tu diseño */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.article-footer1 {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Espaciado entre los elementos */
+}
+
+/* Título h3 */
+.article-footer1 h3 {
+    text-align: center;
+    margin-bottom: 20px; /* Espaciado inferior */
+    font-size: 1.8rem;
+    letter-spacing: 0.5px; /* Ligera separación entre letras */
+    color: #EAC25F;
+}
+
+/* Contenedor de iconos */
+.footer1-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Espaciado entre los iconos */
+}
+
+.footer1-redes img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.footer1-redes img:hover {
+    transform: scale(1.1); /* Efecto al pasar el mouse */
+}
+
+/* Contenedor de información */
+.footer1-inform {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.inform-colum {
+    flex: 1;
+    text-align: left;
+    padding: 0 10px;
+    border-right: 1px solid #ddd;
+}
+
+.inform-colum:last-child {
+    border-right: none; /* Eliminar borde derecho de la última columna */
+}
+
+/* Enlaces en las columnas */
+.inform-colum a {
+    text-decoration: none;
+    color: #EAC25F;
+    display: block;
+    margin-bottom: 10px; /* Espaciado entre enlaces */
+}
+
+.inform-colum a:hover {
+    color: #EAC25F; /* Mantener el color al pasar el mouse */
+}
+
+/* Logo */
+.footer1-logo {
+    display: block;
+    margin: 30px auto 0 auto; /* Centrado y separación superior */
+    max-width: 150px; /* Ajusta el tamaño según tu diseño */
+}
+
+/* Contenedor inferior */
+.footer1-pie {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer1-pie p {
+    margin: 0;
+}
+
+.footer1-pie a {
+    text-decoration: none;
+    color: #EAC25F;
+}
+
+.footer1-pie a:hover {
+    color: #EAC25F; /* Mantener el color al pasar el mouse */
+}

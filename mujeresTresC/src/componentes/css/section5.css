@@ -157,7 +157,8 @@
 
 /* Contenedor de los botones */
 .section5-button {
-    max-width: 50%;
+
+    align-items: center;
     justify-content: center;
     display: grid;             /* Usamos grid para organizar los elementos */
     grid-template-columns: repeat(2, auto); /* Definimos 2 columnas para los botones */
