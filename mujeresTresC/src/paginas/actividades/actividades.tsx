@@ -1,4 +1,4 @@
-import Menu2 from '../../componentes/menu2';
+import Menu1 from '../../componentes/menu1';
 import Yoga from './yoga';
 import Teatro from './teatro';
 import TallerL from './tallerLectura';
@@ -10,7 +10,7 @@ import '../../App.css';
 const Actividades = () => {
   return (
     <>
-      <Menu2 /> 
+      <Menu1 /> 
       <Yoga />
       <Teatro />
       <TallerL />

@@ -1,4 +1,4 @@
-import Menu2 from '../../componentes/menu2';
+import Menu1 from '../../componentes/menu1';
 import Conferencia from './conferencia';
 import Colaboracion from './colaboracion';
 import Salidas from './salidas';
@@ -10,7 +10,7 @@ import '../../App.css';
 const Noticias = () => {
   return (
     <>
-      <Menu2 /> 
+      <Menu1 /> 
       <Conferencia />
       <Colaboracion />
       <Salidas />

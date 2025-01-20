@@ -1,4 +1,4 @@
-import Menu2 from '../../componentes/menu2';
+import Menu1 from '../../componentes/menu1';
 import Footer1 from '../../componentes/footer1';
 
 import '../../App.css';
@@ -6,7 +6,7 @@ import '../../App.css';
 const Calendario = () => {
   return (
     <>
-      <Menu2 /> 
+      <Menu1 /> 
       <Footer1 />
     </>
   );
